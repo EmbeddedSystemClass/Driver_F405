@@ -112,9 +112,11 @@ MFX_output_t data_out;
 
 
 int  tempComputation=1;
-char tempAcc[64];
-char tempGyro[64];
-int flag=1;
+char data[128];
+int flag=0;
+int count=1;
+int skipped=0;
+int incr=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -190,18 +192,16 @@ int main(void)
   testConnection=LSM9DS1_IsConnected();
   LSM9DS1_XLG_TurnOff();
 
-  /*if(DOF_MODE==MODE_9DOF){
+  if(DOF_MODE==MODE_9DOF){
 	  LSM9DS1_XLG_READ start= LSM9DS1_XLGM_Start(10,10,14,2000,4);
 	  MotionFX_manager_init(MODE_9DOF);
   }
   else{
-	  LSM9DS1_XLG_READ start= LSM9DS1_XLG_Start(10,14,2000);
+	  LSM9DS1_XLG_READ start= LSM9DS1_XLG_Start(10,245,2);
 	  MotionFX_manager_init(MODE_6DOF);
 
-  }*/
+  }
 
-  LSM9DS1_XLG_READ starts= LSM9DS1_XLG_Start(10,245,2);
-  MotionFX_manager_init();
 
 
 
@@ -217,22 +217,49 @@ int main(void)
 
   }
 
-	LSM9DS1_Read_XLG(&data_in,1);
 
-	snprintf(tempGyro, 64, "%3.1f %3.1f %3.1f %3.1f %3.1f %3.1f %3.1f %3.1f %3.1f",
-			data_in.acc[0], data_in.acc[1], data_in.acc[2],
-			data_in.acc[0], data_in.acc[1], data_in.acc[2],
-			data_in.acc[0], data_in.acc[1], data_in.acc[2]
-	);
+
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while(1)
-  {
-	  CDC_Transmit_FS((uint8_t *)tempGyro,strlen(tempGyro));
-  }
+
+
+
+
+
+	  while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)){};
+	  HAL_TIM_Base_Start_IT(&htim3);
+	  while(1)
+	  {
+		  if(flag==1)
+		  		{
+
+			  	 LSM9DS1_Read_XLG(&data_in,1);
+			  	 MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
+		  		   //test for packet loss detect
+		  		   snprintf(data, 128, "%4i|%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\n",
+		  				   count,
+						   data_in.acc[0], data_in.acc[1], data_in.acc[2],
+						   data_in.gyro[0],data_in.gyro[1],data_in.gyro[2],
+						   data_out.rotation_6X[0],data_out.rotation_6X[1],data_out.rotation_6X[2]);
+		  		   uint8_t result=CDC_Transmit_FS((uint8_t *)data,strlen(data));
+		  		   count++;
+		  		   flag=0;
+
+		  		}
+
+	  }
+
+
+
+
+
+
+
+
+
 
   /* USER CODE END WHILE */
 
@@ -328,16 +355,13 @@ void HighComputationMode9DOF()
 	}
 	else{
 		MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
-		snprintf(tempGyro, 64, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\r",
+		snprintf(data, 64, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\r",
 					data_in.acc[0], data_in.acc[1], data_in.acc[2],
 					data_in.gyro[0],data_in.gyro[1],data_in.gyro[3],
 					data_in.mag[0],data_in.mag[1],data_in.mag[2],
 					data_out.rotation_9X[0],data_out.rotation_9X[1],data_out.rotation_9X[2]);
 
-		//Test for Gyroscope data viewer 3D
-		/*snprintf(tempGyro, 64, "%3.1f;%3.1f;%3.1f",
-							data_out.rotation_9X[0],data_out.rotation_9X[1],data_out.rotation_9X[2]);
-			CDC_Transmit_FS((uint8_t *)tempGyro,strlen(tempGyro));*/
+
 			HAL_Delay(2);
 		tempComputation=1;
 	}
@@ -348,7 +372,10 @@ void HighComputationMode9DOF()
 void HighComputationMode()
 {
 
-	flag=0;
+
+	flag=1;
+
+
 
 	/* if(DOF_MODE == MODE_9DOF)
 	{
@@ -387,7 +414,7 @@ void HighComputationMode()
 
 void LowComputationMode(){
 
-	LSM9DS1_Read_XLG(&data_in,1);
+	/*LSM9DS1_Read_XLG(&data_in,1);
 
 	snprintf(tempAcc, 64, "%.3f;%.3f;%.3f|%2f;%2f;%2f\r",
 			data_in.acc[0], data_in.acc[1], data_in.acc[2],
@@ -397,7 +424,8 @@ void LowComputationMode(){
 
 	/*snprintf(tempGyro, 64, "Gyro(grades/s) X: %2f Y: %2f Z: %2f\n",  data_in.gyro[0],data_in.gyro[1],data_in.gyro[2]);
 	CDC_Transmit_FS((uint8_t *)tempGyro,strlen(tempGyro));*/
-	HAL_Delay(2);
+	//HAL_Delay(2);
+
 
 }
 /*! ------------------------------------------------------------------------------------------------------------------
