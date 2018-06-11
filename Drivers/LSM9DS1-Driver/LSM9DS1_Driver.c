@@ -630,27 +630,18 @@ LSM9DS1_XL_START LSM9DS1_XL_Start(int odr, int fs)
 LSM9DS1_XLG_START LSM9DS1_XLG_Start(int odr, int fsG, int fsXl)
  {
 
-	 if(LSM9DS1_G_SetOdr(odr))
-	 {
-		 if(LSM9DS1_XL_SetOdr(odr))
-		{
-			 if(LSM9DS1_XL_SetFs(fsXl))
-			 {
-			 	if(LSM9DS1_G_SetFs(fsG))
-			 	  {
-			 		 return LSM9DS1_XLG_START_SUCCESS;
-			 	   }
-			 	else
-			 	    return LSM9DS1_XLG_START_ERROR_FS;
-			 }
-			 else
-			    return LSM9DS1_XL_START_ERROR_FS;
-		 }
-		 else
-			 return LSM9DS1_XLG_START_ERROR;
+	if(!LSM9DS1_G_SetOdr(odr))
+		return LSM9DS1_XLG_START_ERROR;
 
-	 }
-	 else
+	if(!LSM9DS1_XL_SetOdr(odr))
+		return LSM9DS1_XLG_START_ERROR;
+
+	if(!LSM9DS1_XL_SetFs(fsXl))
+			return LSM9DS1_XLG_START_ERROR;
+
+	if(!LSM9DS1_G_SetFs(fsG))
+			return LSM9DS1_XLG_START_ERROR;
+
 		 return LSM9DS1_XLG_START_ERROR;
  }
 

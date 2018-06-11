@@ -113,10 +113,11 @@ MFX_output_t data_out;
 
 int  tempComputation=1;
 char data[128];
+char timer[32];
 int flag=0;
 int count=1;
 int skipped=0;
-int incr=0;
+int id=1;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -180,12 +181,6 @@ int main(void)
   HAL_GPIO_WritePin(PC_11_DISC_GPIO_Port, PC_11_DISC_Pin, GPIO_PIN_RESET);	//Pull-up Enable on USBDP (Only for Olimex STM32-H405 Board)
 
 
-//  mystatus = LPS25HB_Get_DataStatus(LPS25HB_BADDR, &LPS25HB_Status);
-//  mystatus = LPS25HB_Get_Temperature(LPS25HB_BADDR, &Temperatura);
-//  mystatus = LPS25HB_Get_Measurement(LPS25HB_BADDR, &Press_Temp);
-
- //initialise_monitor_handles();
-
   __CRC_CLK_ENABLE();
 
   LSM9DS1_State_Connection testConnection= LSM9DS1_ERROR;
@@ -197,7 +192,7 @@ int main(void)
 	  MotionFX_manager_init(MODE_9DOF);
   }
   else{
-	  LSM9DS1_XLG_READ start= LSM9DS1_XLG_Start(10,245,2);
+	  LSM9DS1_XLG_READ start= LSM9DS1_XLG_Start(119,245,2);
 	  MotionFX_manager_init(MODE_6DOF);
 
   }
@@ -227,26 +222,34 @@ int main(void)
 
 
 
-
-
-	  while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)){};
-	  HAL_TIM_Base_Start_IT(&htim3);
+  	  uint32_t t0,t1;
+  	 //start when button is pressed
+	 while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)){};
+	 t1=0;
+	 HAL_TIM_Base_Start_IT(&htim3);
 	  while(1)
 	  {
 		  if(flag==1)
-		  		{
+		  	{
 
-			  	 LSM9DS1_Read_XLG(&data_in,1);
-			  	 MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
+			  HAL_NVIC_DisableIRQ(TIM3_IRQn);
+			  t0=HAL_GetTick();
+			  LSM9DS1_Read_XLG(&data_in,1);
+			  MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
 		  		   //test for packet loss detect
-		  		   snprintf(data, 128, "%4i|%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\n",
-		  				   count,
+		  		   snprintf(data, 128, "%d|%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f|%Lu\n",
+		  				   id,
 						   data_in.acc[0], data_in.acc[1], data_in.acc[2],
 						   data_in.gyro[0],data_in.gyro[1],data_in.gyro[2],
-						   data_out.rotation_6X[0],data_out.rotation_6X[1],data_out.rotation_6X[2]);
+						   data_out.rotation_6X[0],data_out.rotation_6X[1],data_out.rotation_6X[2],
+						   t1);
 		  		   uint8_t result=CDC_Transmit_FS((uint8_t *)data,strlen(data));
-		  		   count++;
-		  		   flag=0;
+		  		   id++;
+
+		  		flag=0;
+
+		  		t1=HAL_GetTick()-t0;
+		  		HAL_NVIC_EnableIRQ(TIM3_IRQn);
 
 		  		}
 
@@ -371,9 +374,10 @@ void HighComputationMode9DOF()
 
 void HighComputationMode()
 {
-
-
 	flag=1;
+
+
+
 
 
 
