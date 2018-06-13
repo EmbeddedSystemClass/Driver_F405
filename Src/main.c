@@ -65,6 +65,7 @@
 #include "motion_fx.h"
 #include <math.h>
 #include <sys/time.h>
+#include <inttypes.h>
 /* USER CODE END Includes */
 
 /* Private variables ---------------------------------------------------------*/
@@ -226,10 +227,65 @@ int main(void)
   	 //start when button is pressed
 	 while (HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0)){};
 	 t1=0;
-	 HAL_TIM_Base_Start_IT(&htim3);
-	  while(1)
+	 //HAL_TIM_Base_Start_IT(&htim3);
+	 id=0;
+	 int lost=0;
+	 uint8_t result;
+	 t0=HAL_GetTick();
+	 //Test I2C speed
+	 while(1){
+	     if(id<1000){
+
+	    	     if(!I2C_ReadData(LSM9DS1_I2C_BADD,LSM9DS1_WHO_AM_I,&result,1)){
+	    	    	 if( result == LSM9DS1_WHO_AM_I_VALUE)
+	    	    		 				  id++;
+	    	     }
+	 			  else
+	 			  {
+	 				  lost++;
+	 			  }
+
+
+	 			  if(id==1000)
+	 			  {
+	 				  t1=HAL_GetTick()-t0;
+	 				  HAL_Delay(2);
+	 				  snprintf(data, 10, "%Lu",t1);
+	 				  CDC_Transmit_FS((uint8_t *)data,strlen(data));
+	 			  }
+	 		  }
+	     else{
+
+	     }
+
+
+
+	 //Test usb CDC speed
+	 /*while(1)
 	  {
-		  if(flag==1)
+		  snprintf(data, 10, "%d|%d\n",id,lost);
+		  if(id<1000){
+			  if(CDC_Transmit_FS((uint8_t *)data,strlen(data))== USBD_OK)
+			  		  {
+			  			  id++;
+			  		  }
+			  else{
+				  lost++;
+			  }
+
+			  if(id==1000)
+			  {
+				  t1=HAL_GetTick()-t0;
+				  HAL_Delay(2);
+				  snprintf(data, 10, "%Lu\n",t1);
+				  CDC_Transmit_FS((uint8_t *)data,strlen(data));
+			  }
+		  }*/
+
+
+
+
+		  /*if(flag==1)
 		  	{
 
 			  HAL_NVIC_DisableIRQ(TIM3_IRQn);
@@ -251,7 +307,9 @@ int main(void)
 		  		t1=HAL_GetTick()-t0;
 		  		HAL_NVIC_EnableIRQ(TIM3_IRQn);
 
-		  		}
+		  		}*/
+
+
 
 	  }
 
@@ -358,7 +416,7 @@ void HighComputationMode9DOF()
 	}
 	else{
 		MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
-		snprintf(data, 64, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\r",
+		snprintf(data, 128, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\r",
 					data_in.acc[0], data_in.acc[1], data_in.acc[2],
 					data_in.gyro[0],data_in.gyro[1],data_in.gyro[3],
 					data_in.mag[0],data_in.mag[1],data_in.mag[2],
