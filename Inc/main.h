@@ -96,10 +96,6 @@
 #define IO_EXP_PRESENT (0)
 #define PRESSURE_SENSOR_PRESENT (0)
 
- typedef enum{
-	MODE_9DOF = 1,
-	MODE_6DOF = 0,
-}DOF;
 
 //#define BIT_MASK(bit)             (1 << (bit))
 //#define SET_BIT(value,bit)        ((value) |= BIT_MASK(bit))

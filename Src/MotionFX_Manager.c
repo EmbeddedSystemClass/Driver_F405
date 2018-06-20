@@ -81,7 +81,7 @@ int discardedCount = 0;
   * @param  handle handle to gyroscope sensor
   * @retval none
   */
-void MotionFX_manager_init()
+void MotionFX_manager_init(mode)
 {
   uint8_t instance;
 
@@ -116,18 +116,17 @@ void MotionFX_manager_init()
   MotionFX_setKnobs(ipKnobs);
 
 
- /* if(mode==MODE_6DOF)
+  if(mode == 0)
   {
 	  MotionFX_manager_start_6X();
 	  MotionFX_manager_stop_9X();
   }
-  else if(mode==MODE_9DOF){
+  else {
 	  MotionFX_manager_stop_6X();
 	  MotionFX_manager_start_9X();
-  }*/
+  }
 
-  MotionFX_manager_start_6X();
-  	  MotionFX_manager_stop_9X();
+
 }
 
 
