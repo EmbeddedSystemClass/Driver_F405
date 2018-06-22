@@ -785,7 +785,7 @@ LSM9DS1_XLG_READ LSM9DS1_Read_XLG(MFX_input_t *data_in, int samples)
 	     /* Format the data. */
 	     data_in->gyro[0] = ( int32_t ) (pData[0] * sensitivityG )/divisor;
 	     data_in->gyro[1] = ( int32_t ) (pData[1] * sensitivityG )/divisor;
-	     data_in->gyro[2] = ( int32_t )(pData[2] * sensitivityG )/divisor;
+	     data_in->gyro[2] = (( int32_t )(pData[2] * sensitivityG )/divisor);
 
 	     regadd=LSM9DS1_OUT_X_L_XL;
 	     //read Accelerometer output
@@ -908,7 +908,7 @@ LSM9DS1_XLG_READ LSM9DS1_Read_XLGM(MFX_input_t *data_in, int samples)
 	   		pData[j]=data;
 
 	   	 }
-	   		/* Format the data in uT  */
+	   		/* Format the data in uT/50  */
 	   		data_in->mag[0] = ( int32_t ) ((pData[6] * sensitivityM)/10);
 	   		data_in->mag[1] = ( int32_t ) ((pData[7] * sensitivityM)/10);
 	   		data_in->mag[2] = ( int32_t ) ((pData[8] * sensitivityM)/10);

@@ -55,7 +55,7 @@
 /* Private defines -----------------------------------------------------------*/
 #define SAMPLETODISCARD                 10
 #define GBIAS_ACC_TH_SC_6X              (2.0f*0.000765f)
-#define GBIAS_GYRO_TH_SC_6X             (2.0f*0.002f)
+#define GBIAS_GYRO_TH_SC_6X             (1.0f*0.002f)
 #define GBIAS_MAG_TH_SC_6X              (2.0f*0.001500f)
 #define GBIAS_ACC_TH_SC_9X              (2.0f*0.000765f)
 #define GBIAS_GYRO_TH_SC_9X             (2.0f*0.002f)
@@ -124,6 +124,7 @@ void MotionFX_manager_init(mode)
   else {
 	  MotionFX_manager_stop_6X();
 	  MotionFX_manager_start_9X();
+	  MotionFX_MagCal_init(10,1);
   }
 
 

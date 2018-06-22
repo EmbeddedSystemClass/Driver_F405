@@ -96,7 +96,7 @@ typedef enum{
 }SPEED;
 
 #define ComputationMode					TEST_COMPUTATION_MODE
-#define DOF_MODE						MODE_9DOF
+#define DOF_MODE						MODE_6DOF
 #define TEST_MODE						USB_SPEED_TEST
 
 
@@ -121,12 +121,15 @@ uint8_t toggle = 0x0;
 
 MFX_input_t data_in;
 MFX_output_t data_out;
+MFX_MagCal_input_t mag_in;
+MFX_MagCal_output_t mag_out;
 
 
 int  tempComputation=1;
 char data[128];
 char timer[32];
 int flag=0;
+int flag2=0;
 int count=1;
 int skipped=0;
 int id=1;
@@ -200,7 +203,7 @@ int main(void)
   LSM9DS1_XLG_TurnOff();
 
   if(DOF_MODE==MODE_9DOF){
-	  LSM9DS1_XLG_READ start= LSM9DS1_XLGM_Start(119,40,14,2000,4);
+	  LSM9DS1_XLG_READ start= LSM9DS1_XLGM_Start(119,20,14,2000,4);
 	  MotionFX_manager_init(MODE_9DOF);
   }
   else{
@@ -329,7 +332,13 @@ void handler(){
 	flag=1;
 }
 
+void magCall(){
+	flag2=1;
+}
+
 void HighComputationMode(){
+
+
 
 	 HAL_TIM_Base_Start_IT(&htim3);
 	 		while(1)
@@ -411,12 +420,15 @@ void LowComputationMode(){
 void TestComputationMode(){
 
 	HAL_TIM_Base_Start_IT(&htim3);
+	//HAL_TIM_Base_Start_IT(&htim2);
+
 		while(1)
 			{
 			  if(flag==1)
 			  	{
 
 				  HAL_NVIC_DisableIRQ(TIM3_IRQn);
+
 
 				  //prepare packet
 				  if(DOF_MODE == MODE_6DOF)
@@ -430,7 +442,27 @@ void TestComputationMode(){
 				  	}
 				  	else
 				  	{
+
 				  		LSM9DS1_Read_XLGM(&data_in,1);
+				  		if(flag2==1){
+				  		  HAL_NVIC_DisableIRQ(TIM2_IRQn);
+				  			mag_in.mag[0]=data_in.mag[0];
+				  			mag_in.mag[1]=data_in.mag[1];
+				  			mag_in.mag[2]=data_in.mag[2];
+				  			mag_in.time_stamp=10;
+				  			MotionFX_MagCal_run(&mag_in);
+				  			MotionFX_MagCal_getParams(&mag_out);
+				  			if(mag_out.cal_quality==  MFX_MAGCALGOOD){
+				  				data_in.mag[0]=data_in.mag[0]-mag_out.hi_bias[0];
+				  				data_in.mag[1]=data_in.mag[1]-mag_out.hi_bias[1];
+				  				data_in.mag[2]=data_in.mag[2]-mag_out.hi_bias[2];
+				  			}
+
+				  			flag2=0;
+				  		HAL_NVIC_EnableIRQ(TIM2_IRQn);
+				  		}
+
+
 				  		MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
 				  		snprintf(data, 128, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\n",
 				  							data_in.acc[0], data_in.acc[1], data_in.acc[2],
@@ -442,6 +474,7 @@ void TestComputationMode(){
 			  	  //transmit data
 			  	  CDC_Transmit_FS((uint8_t *)data,strlen(data));
 			  	  flag=0;
+
 			  	  HAL_NVIC_EnableIRQ(TIM3_IRQn);
 			  	  }
 
