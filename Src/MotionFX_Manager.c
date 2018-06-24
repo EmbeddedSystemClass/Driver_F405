@@ -55,7 +55,7 @@
 /* Private defines -----------------------------------------------------------*/
 #define SAMPLETODISCARD                 10
 #define GBIAS_ACC_TH_SC_6X              (2.0f*0.000765f)
-#define GBIAS_GYRO_TH_SC_6X             (1.0f*0.002f)
+#define GBIAS_GYRO_TH_SC_6X             (6.0f*0.002f)
 #define GBIAS_MAG_TH_SC_6X              (2.0f*0.001500f)
 #define GBIAS_ACC_TH_SC_9X              (2.0f*0.000765f)
 #define GBIAS_GYRO_TH_SC_9X             (2.0f*0.002f)
@@ -81,7 +81,7 @@ int discardedCount = 0;
   * @param  handle handle to gyroscope sensor
   * @retval none
   */
-void MotionFX_manager_init(mode)
+void MotionFX_manager_init(int mode)
 {
   uint8_t instance;
 
@@ -99,11 +99,11 @@ void MotionFX_manager_init(mode)
 
 
    //case LSM6DS3_G_0
-      ipKnobs->acc_orientation[0] = 's';
+      ipKnobs->acc_orientation[0] = 'n';
       ipKnobs->acc_orientation[1] = 'e';
       ipKnobs->acc_orientation[2] = 'u';
 
-      ipKnobs->gyro_orientation[0] = 's';
+      ipKnobs->gyro_orientation[0] = 'n';
       ipKnobs->gyro_orientation[1] = 'e';
       ipKnobs->gyro_orientation[2] = 'u';
 
@@ -113,18 +113,31 @@ void MotionFX_manager_init(mode)
   ipKnobs->LMode = 1;
   ipKnobs->modx = DECIMATION;
   
+  ipKnobs->ATime=1.5;
+  ipKnobs->FrTime=9.0;
+
+
+
   MotionFX_setKnobs(ipKnobs);
 
+
+  MotionFX_manager_stop_6X();
+  MotionFX_manager_stop_9X();
+
+
+
+  MotionFX_setGbias(&ipKnobs->gbias_gyro_th_sc_6X);
 
   if(mode == 0)
   {
 	  MotionFX_manager_start_6X();
-	  MotionFX_manager_stop_9X();
+
   }
   else {
-	  MotionFX_manager_stop_6X();
-	  MotionFX_manager_start_9X();
+
+
 	  MotionFX_MagCal_init(10,1);
+	  MotionFX_manager_start_9X();
   }
 
 

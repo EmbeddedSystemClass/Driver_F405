@@ -203,7 +203,7 @@ int main(void)
   LSM9DS1_XLG_TurnOff();
 
   if(DOF_MODE==MODE_9DOF){
-	  LSM9DS1_XLG_READ start= LSM9DS1_XLGM_Start(119,20,14,2000,4);
+	  LSM9DS1_XLG_READ start= LSM9DS1_XLGM_Start(119,40,245,8,8);
 	  MotionFX_manager_init(MODE_9DOF);
   }
   else{
@@ -338,8 +338,6 @@ void magCall(){
 
 void HighComputationMode(){
 
-
-
 	 HAL_TIM_Base_Start_IT(&htim3);
 	 		while(1)
 	 			{
@@ -391,6 +389,7 @@ void LowComputationMode(){
 					  	{
 
 						  LSM9DS1_Read_XLG(&data_in,1);
+
 						  snprintf(data, 64, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f\n",
 											   data_in.acc[0], data_in.acc[1], data_in.acc[2],
 											   data_in.gyro[0],data_in.gyro[1],data_in.gyro[2]);
@@ -409,9 +408,7 @@ void LowComputationMode(){
 				  	  flag=0;
 				  	  HAL_NVIC_EnableIRQ(TIM3_IRQn);
 				  	  }
-
 				}
-
 
 }
 
@@ -420,7 +417,7 @@ void LowComputationMode(){
 void TestComputationMode(){
 
 	HAL_TIM_Base_Start_IT(&htim3);
-	//HAL_TIM_Base_Start_IT(&htim2);
+	HAL_TIM_Base_Start_IT(&htim2);
 
 		while(1)
 			{
@@ -446,19 +443,19 @@ void TestComputationMode(){
 				  		LSM9DS1_Read_XLGM(&data_in,1);
 				  		if(flag2==1){
 				  		  HAL_NVIC_DisableIRQ(TIM2_IRQn);
-				  			mag_in.mag[0]=data_in.mag[0];
-				  			mag_in.mag[1]=data_in.mag[1];
-				  			mag_in.mag[2]=data_in.mag[2];
-				  			mag_in.time_stamp=10;
+				  			mag_in.mag[0]=data_in.mag[0]/50;
+				  			mag_in.mag[1]=data_in.mag[1]/50;
+				  			mag_in.mag[2]=data_in.mag[2]/50;
+				  			mag_in.time_stamp=0;
 				  			MotionFX_MagCal_run(&mag_in);
 				  			MotionFX_MagCal_getParams(&mag_out);
-				  			if(mag_out.cal_quality==  MFX_MAGCALGOOD){
-				  				data_in.mag[0]=data_in.mag[0]-mag_out.hi_bias[0];
-				  				data_in.mag[1]=data_in.mag[1]-mag_out.hi_bias[1];
-				  				data_in.mag[2]=data_in.mag[2]-mag_out.hi_bias[2];
+				  			if(mag_out.cal_quality !=  MFX_MAGCALPOOR){
+				  				data_in.mag[0]=mag_in.mag[0]-mag_out.hi_bias[0];
+				  				data_in.mag[1]=mag_in.mag[1]-mag_out.hi_bias[1];
+				  				data_in.mag[2]=mag_in.mag[2]-mag_out.hi_bias[2];
 				  			}
 
-				  			flag2=0;
+				  		flag2=0;
 				  		HAL_NVIC_EnableIRQ(TIM2_IRQn);
 				  		}
 
