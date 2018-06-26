@@ -114,7 +114,7 @@ void MotionFX_manager_init(int mode)
   ipKnobs->modx = DECIMATION;
   
   ipKnobs->ATime=1.5;
-  ipKnobs->FrTime=9.0;
+  ipKnobs->FrTime=0.5;
 
 
 
