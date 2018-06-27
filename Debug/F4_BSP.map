@@ -32714,7 +32714,7 @@ LOAD c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../li
                 0x08000000                g_pfnVectors
                 0x08000188                . = ALIGN (0x4)
 
-.text           0x080001c0    0x17f98
+.text           0x080001c0    0x17f68
                 0x080001c0                . = ALIGN (0x4)
  *(.text)
  .text          0x080001c0       0x6c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
@@ -33717,348 +33717,348 @@ LOAD c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../li
                 0x0800b2f4                LSM9DS1_XLG_Start
  *fill*         0x0800b34a        0x2 
  .text.LSM9DS1_Read_XLG
-                0x0800b34c      0x274 ./Drivers/LSM9DS1-Driver/LSM9DS1_Driver.o
+                0x0800b34c      0x244 ./Drivers/LSM9DS1-Driver/LSM9DS1_Driver.o
                 0x0800b34c                LSM9DS1_Read_XLG
  .text.LSM9DS1_IsConnected
-                0x0800b5c0       0x50 ./Drivers/LSM9DS1-Driver/LSM9DS1_Driver.o
-                0x0800b5c0                LSM9DS1_IsConnected
+                0x0800b590       0x50 ./Drivers/LSM9DS1-Driver/LSM9DS1_Driver.o
+                0x0800b590                LSM9DS1_IsConnected
  .text.m_mldivide
-                0x0800b610      0x394 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800b5e0      0x394 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.m_qmult_eml
-                0x0800b9a4       0xd0 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800b974       0xd0 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.m_q2dcm_eml
-                0x0800ba74       0xcc C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800ba44       0xcc C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.m_dcm2q_eml
-                0x0800bb40      0x200 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800bb10      0x200 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.SpacePointGyroProp
-                0x0800bd40      0x160 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800bd10      0x160 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.m_b_interp1q_constrain
-                0x0800bea0      0x104 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800be70      0x104 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.m_interp1q_constrain
-                0x0800bfa4      0x104 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800bf74      0x104 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.rt_InitInfAndNaN.isra.3
-                0x0800c0a8       0x28 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800c078       0x28 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.m_rt_atan2f_snf
-                0x0800c0d0      0x128 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800c0a0      0x128 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.output_update
-                0x0800c1f8      0x304 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800c1c8      0x304 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.iNemo_setOrientation.constprop.51
-                0x0800c4fc      0x3c8 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800c4cc      0x3c8 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.iNemo_setOrientation_6X.constprop.52
-                0x0800c8c4      0x3c8 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
- *fill*         0x0800cc8c        0x4 
+                0x0800c894      0x3c8 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+ *fill*         0x0800cc5c        0x4 
  .text.iNemo_quat2heading
-                0x0800cc90      0x43c C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
- *fill*         0x0800d0cc        0x4 
+                0x0800cc60      0x43c C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+ *fill*         0x0800d09c        0x4 
  .text.m_kalman_3gyro.isra.8.constprop.47
-                0x0800d0d0     0x3e70 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0800d0a0     0x3e70 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.SpacePointAlgorithm.isra.9
-                0x08010f40      0x424 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08010f10      0x424 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.iNemo_update_6X.constprop.45
-                0x08011364      0x418 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08011334      0x418 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.iNemo_update.constprop.46
-                0x0801177c      0x504 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0801174c      0x504 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  .text.MotionFX_initialize
-                0x08011c80      0x3c0 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08011c80                MotionFX_initialize
+                0x08011c50      0x3c0 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08011c50                MotionFX_initialize
  .text.MotionFX_setKnobs
-                0x08012040       0xd0 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08012040                MotionFX_setKnobs
+                0x08012010       0xd0 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08012010                MotionFX_setKnobs
  .text.MotionFX_getKnobs
-                0x08012110       0xac C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08012110                MotionFX_getKnobs
+                0x080120e0       0xac C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x080120e0                MotionFX_getKnobs
  .text.MotionFX_enable_6X
-                0x080121bc       0x4c C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x080121bc                MotionFX_enable_6X
+                0x0801218c       0x4c C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x0801218c                MotionFX_enable_6X
  .text.MotionFX_enable_9X
-                0x08012208       0x50 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08012208                MotionFX_enable_9X
+                0x080121d8       0x50 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x080121d8                MotionFX_enable_9X
  .text.MotionFX_setGbias
-                0x08012258       0x68 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08012258                MotionFX_setGbias
+                0x08012228       0x68 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08012228                MotionFX_setGbias
  .text.MotionFX_update
-                0x080122c0      0x394 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x080122c0                MotionFX_update
- *fill*         0x08012654        0x4 
+                0x08012290      0x394 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08012290                MotionFX_update
+ *fill*         0x08012624        0x4 
  .text.MotionFX_propagate
-                0x08012658      0xf28 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08012658                MotionFX_propagate
+                0x08012628      0xf28 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08012628                MotionFX_propagate
  .text.MotionFX_MagCal_init
-                0x08013580      0x200 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
-                0x08013580                MotionFX_MagCal_init
+                0x08013550      0x200 C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+                0x08013550                MotionFX_MagCal_init
  .text.__libc_init_array
-                0x08013780       0x50 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-init.o)
-                0x08013780                __libc_init_array
- .text.malloc   0x080137d0       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-malloc.o)
-                0x080137d0                malloc
- .text.free     0x080137e0       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-malloc.o)
-                0x080137e0                free
+                0x08013750       0x50 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-init.o)
+                0x08013750                __libc_init_array
+ .text.malloc   0x080137a0       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-malloc.o)
+                0x080137a0                malloc
+ .text.free     0x080137b0       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-malloc.o)
+                0x080137b0                free
  .text._malloc_r
-                0x080137f0      0x560 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
-                0x080137f0                _malloc_r
- .text.memset   0x08013d50       0x9c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-memset.o)
-                0x08013d50                memset
+                0x080137c0      0x560 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mallocr.o)
+                0x080137c0                _malloc_r
+ .text.memset   0x08013d20       0x9c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-memset.o)
+                0x08013d20                memset
  .text.__malloc_lock
-                0x08013dec        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
-                0x08013dec                __malloc_lock
+                0x08013dbc        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+                0x08013dbc                __malloc_lock
  .text.__malloc_unlock
-                0x08013df8        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
-                0x08013df8                __malloc_unlock
- .text._sbrk_r  0x08013e04       0x24 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
-                0x08013e04                _sbrk_r
+                0x08013dc8        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mlock.o)
+                0x08013dc8                __malloc_unlock
+ .text._sbrk_r  0x08013dd4       0x24 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-sbrkr.o)
+                0x08013dd4                _sbrk_r
  .text.snprintf
-                0x08013e28       0x98 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-snprintf.o)
-                0x08013e28                snprintf
+                0x08013df8       0x98 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-snprintf.o)
+                0x08013df8                snprintf
  .text._svfprintf_r
-                0x08013ec0     0x1494 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
-                0x08013ec0                _svfprintf_r
+                0x08013e90     0x1494 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
+                0x08013e90                _svfprintf_r
  .text.startup.register_fini
-                0x08015354       0x14 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
- .text.atexit   0x08015368        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-atexit.o)
-                0x08015368                atexit
- .text.quorem   0x08015374      0x128 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-dtoa.o)
- *fill*         0x0801549c        0x4 
- .text._dtoa_r  0x080154a0      0xe4c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-dtoa.o)
-                0x080154a0                _dtoa_r
+                0x08015324       0x14 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
+ .text.atexit   0x08015338        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-atexit.o)
+                0x08015338                atexit
+ .text.quorem   0x08015344      0x128 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-dtoa.o)
+ *fill*         0x0801546c        0x4 
+ .text._dtoa_r  0x08015470      0xe4c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-dtoa.o)
+                0x08015470                _dtoa_r
  .text.__libc_fini_array
-                0x080162ec       0x34 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-fini.o)
-                0x080162ec                __libc_fini_array
+                0x080162bc       0x34 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-fini.o)
+                0x080162bc                __libc_fini_array
  .text._malloc_trim_r
-                0x08016320       0xa0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
-                0x08016320                _malloc_trim_r
- .text._free_r  0x080163c0      0x1cc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
-                0x080163c0                _free_r
+                0x080162f0       0xa0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+                0x080162f0                _malloc_trim_r
+ .text._free_r  0x08016390      0x1cc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-freer.o)
+                0x08016390                _free_r
  .text._localeconv_r
-                0x0801658c       0x1c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-localeconv.o)
-                0x0801658c                _localeconv_r
+                0x0801655c       0x1c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-localeconv.o)
+                0x0801655c                _localeconv_r
  .text.__retarget_lock_acquire_recursive
-                0x080165a8        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x080165a8                __retarget_lock_acquire_recursive
+                0x08016578        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x08016578                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080165ac        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
-                0x080165ac                __retarget_lock_release_recursive
- .text._Balloc  0x080165b0       0x4c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x080165b0                _Balloc
- .text._Bfree   0x080165fc       0x14 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x080165fc                _Bfree
+                0x0801657c        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-lock.o)
+                0x0801657c                __retarget_lock_release_recursive
+ .text._Balloc  0x08016580       0x4c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x08016580                _Balloc
+ .text._Bfree   0x080165cc       0x14 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080165cc                _Bfree
  .text.__multadd
-                0x08016610       0x80 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016610                __multadd
+                0x080165e0       0x80 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080165e0                __multadd
  .text.__hi0bits
-                0x08016690       0x40 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016690                __hi0bits
+                0x08016660       0x40 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x08016660                __hi0bits
  .text.__lo0bits
-                0x080166d0       0x60 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x080166d0                __lo0bits
- .text.__i2b    0x08016730       0x14 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016730                __i2b
+                0x080166a0       0x60 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080166a0                __lo0bits
+ .text.__i2b    0x08016700       0x14 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x08016700                __i2b
  .text.__multiply
-                0x08016744      0x124 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016744                __multiply
+                0x08016714      0x124 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x08016714                __multiply
  .text.__pow5mult
-                0x08016868       0xa0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016868                __pow5mult
+                0x08016838       0xa0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x08016838                __pow5mult
  .text.__lshift
-                0x08016908       0xa4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016908                __lshift
- .text.__mcmp   0x080169ac       0x38 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x080169ac                __mcmp
- .text.__mdiff  0x080169e4      0x108 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x080169e4                __mdiff
- .text.__d2b    0x08016aec       0xbc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08016aec                __d2b
+                0x080168d8       0xa4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080168d8                __lshift
+ .text.__mcmp   0x0801697c       0x38 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x0801697c                __mcmp
+ .text.__mdiff  0x080169b4      0x108 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080169b4                __mdiff
+ .text.__d2b    0x08016abc       0xbc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x08016abc                __d2b
  .text.__ssprint_r
-                0x08016ba8       0xfc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfiprintf.o)
-                0x08016ba8                __ssprint_r
+                0x08016b78       0xfc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfiprintf.o)
+                0x08016b78                __ssprint_r
  .text.__register_exitproc
-                0x08016ca4       0xc4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__atexit.o)
-                0x08016ca4                __register_exitproc
+                0x08016c74       0xc4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__atexit.o)
+                0x08016c74                __register_exitproc
  .text._calloc_r
-                0x08016d68       0x60 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-callocr.o)
-                0x08016d68                _calloc_r
+                0x08016d38       0x60 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-callocr.o)
+                0x08016d38                _calloc_r
  .text.__ascii_mbtowc
-                0x08016dc8       0x2c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mbtowc_r.o)
-                0x08016dc8                __ascii_mbtowc
- .text.memmove  0x08016df4       0xc8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-memmove.o)
-                0x08016df4                memmove
+                0x08016d98       0x2c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mbtowc_r.o)
+                0x08016d98                __ascii_mbtowc
+ .text.memmove  0x08016dc4       0xc8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-memmove.o)
+                0x08016dc4                memmove
  .text._realloc_r
-                0x08016ebc      0x34c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reallocr.o)
-                0x08016ebc                _realloc_r
+                0x08016e8c      0x34c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-reallocr.o)
+                0x08016e8c                _realloc_r
  .text.__ascii_wctomb
-                0x08017208       0x1c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-wctomb_r.o)
-                0x08017208                __ascii_wctomb
- .text._sbrk    0x08017224       0x1c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
-                0x08017224                _sbrk
- .text.__errno  0x08017240        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
-                0x08017240                __errno
- *fill*         0x0801724c        0x4 
- .text.floor    0x08017250      0x120 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_floor.o)
-                0x08017250                floor
- .text.fmax     0x08017370       0x58 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fmax.o)
-                0x08017370                fmax
+                0x080171d8       0x1c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-wctomb_r.o)
+                0x080171d8                __ascii_wctomb
+ .text._sbrk    0x080171f4       0x1c c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libnosys.a(sbrk.o)
+                0x080171f4                _sbrk
+ .text.__errno  0x08017210        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libc.a(lib_a-errno.o)
+                0x08017210                __errno
+ *fill*         0x0801721c        0x4 
+ .text.floor    0x08017220      0x120 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_floor.o)
+                0x08017220                floor
+ .text.fmax     0x08017340       0x58 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fmax.o)
+                0x08017340                fmax
  .text.__fpclassifyd
-                0x080173c8       0x84 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fpclassify.o)
-                0x080173c8                __fpclassifyd
- .text.asin     0x0801744c       0xbc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_asin.o)
-                0x0801744c                asin
- .text.atan2    0x08017508        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_atan2.o)
-                0x08017508                atan2
- .text.sqrt     0x0801750c       0xb8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_sqrt.o)
-                0x0801750c                sqrt
- *fill*         0x080175c4        0x4 
+                0x08017398       0x84 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fpclassify.o)
+                0x08017398                __fpclassifyd
+ .text.asin     0x0801741c       0xbc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_asin.o)
+                0x0801741c                asin
+ .text.atan2    0x080174d8        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_atan2.o)
+                0x080174d8                atan2
+ .text.sqrt     0x080174dc       0xb8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_sqrt.o)
+                0x080174dc                sqrt
+ *fill*         0x08017594        0x4 
  .text.__ieee754_asin
-                0x080175c8      0x484 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_asin.o)
-                0x080175c8                __ieee754_asin
- *fill*         0x08017a4c        0x4 
+                0x08017598      0x484 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_asin.o)
+                0x08017598                __ieee754_asin
+ *fill*         0x08017a1c        0x4 
  .text.__ieee754_atan2
-                0x08017a50      0x1c4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_atan2.o)
-                0x08017a50                __ieee754_atan2
+                0x08017a20      0x1c4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_atan2.o)
+                0x08017a20                __ieee754_atan2
  .text.__ieee754_sqrt
-                0x08017c14      0x198 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_sqrt.o)
-                0x08017c14                __ieee754_sqrt
- *fill*         0x08017dac        0x4 
- .text.atan     0x08017db0      0x368 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_atan.o)
-                0x08017db0                atan
- .text.fabs     0x08018118       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fabs.o)
-                0x08018118                fabs
- .text.matherr  0x08018128        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
-                0x08018128                matherr
- *fill*         0x0801812c        0x4 
- .text.nan      0x08018130       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
-                0x08018130                nan
+                0x08017be4      0x198 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-e_sqrt.o)
+                0x08017be4                __ieee754_sqrt
+ *fill*         0x08017d7c        0x4 
+ .text.atan     0x08017d80      0x368 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_atan.o)
+                0x08017d80                atan
+ .text.fabs     0x080180e8       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_fabs.o)
+                0x080180e8                fabs
+ .text.matherr  0x080180f8        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_matherr.o)
+                0x080180f8                matherr
+ *fill*         0x080180fc        0x4 
+ .text.nan      0x08018100       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_nan.o)
+                0x08018100                nan
  *(.glue_7)
- .glue_7        0x08018140        0x0 linker stubs
+ .glue_7        0x08018110        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08018140        0x0 linker stubs
+ .glue_7t       0x08018110        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08018140        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+ .eh_frame      0x08018110        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
  *(.init)
- .init          0x08018140        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x08018140                _init
- .init          0x08018144        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+ .init          0x08018110        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x08018110                _init
+ .init          0x08018114        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
  *(.fini)
- .fini          0x0801814c        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
-                0x0801814c                _fini
- .fini          0x08018150        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
-                0x08018158                . = ALIGN (0x4)
-                0x08018158                _etext = .
+ .fini          0x0801811c        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crti.o
+                0x0801811c                _fini
+ .fini          0x08018120        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtn.o
+                0x08018128                . = ALIGN (0x4)
+                0x08018128                _etext = .
 
-.vfp11_veneer   0x08018158        0x0
- .vfp11_veneer  0x08018158        0x0 linker stubs
+.vfp11_veneer   0x08018128        0x0
+ .vfp11_veneer  0x08018128        0x0 linker stubs
 
-.v4_bx          0x08018158        0x0
- .v4_bx         0x08018158        0x0 linker stubs
+.v4_bx          0x08018128        0x0
+ .v4_bx         0x08018128        0x0 linker stubs
 
-.iplt           0x08018158        0x0
- .iplt          0x08018158        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.iplt           0x08018128        0x0
+ .iplt          0x08018128        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.rodata         0x08018158      0x5f0
-                0x08018158                . = ALIGN (0x4)
+.rodata         0x08018128      0x5f0
+                0x08018128                . = ALIGN (0x4)
  *(.rodata)
- .rodata        0x08018158        0xd ./Src/can.o
- *fill*         0x08018165        0x3 
- .rodata        0x08018168        0xd ./Src/i2c.o
- *fill*         0x08018175        0x3 
- .rodata        0x08018178       0x80 ./Src/main.o
- .rodata        0x080181f8        0xd ./Src/rtc.o
- *fill*         0x08018205        0x3 
- .rodata        0x08018208        0xd ./Src/tim.o
- *fill*         0x08018215        0x3 
- .rodata        0x08018218       0x13 ./Src/usbd_conf.o
- *fill*         0x0801822b        0x1 
- .rodata        0x0801822c       0x56 ./Src/usbd_desc.o
- *fill*         0x08018282        0x2 
- .rodata        0x08018284      0x1cb C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
+ .rodata        0x08018128        0xd ./Src/can.o
+ *fill*         0x08018135        0x3 
+ .rodata        0x08018138        0xd ./Src/i2c.o
+ *fill*         0x08018145        0x3 
+ .rodata        0x08018148       0x80 ./Src/main.o
+ .rodata        0x080181c8        0xd ./Src/rtc.o
+ *fill*         0x080181d5        0x3 
+ .rodata        0x080181d8        0xd ./Src/tim.o
+ *fill*         0x080181e5        0x3 
+ .rodata        0x080181e8       0x13 ./Src/usbd_conf.o
+ *fill*         0x080181fb        0x1 
+ .rodata        0x080181fc       0x56 ./Src/usbd_desc.o
+ *fill*         0x08018252        0x2 
+ .rodata        0x08018254      0x1cb C:\Users\Fabio\Documents\Develop\SRM32\workspace\F4_BSP\Middlewares\ST\motion_fx\libMotionFX200_CM4F_GCC_ot.a(motion_fx.o)
  *(.rodata*)
- *fill*         0x0801844f        0x1 
+ *fill*         0x0801841f        0x1 
  .rodata.AHBPrescTable
-                0x08018450       0x10 ./Src/system_stm32f4xx.o
-                0x08018450                AHBPrescTable
+                0x08018420       0x10 ./Src/system_stm32f4xx.o
+                0x08018420                AHBPrescTable
  .rodata.APBPrescTable
-                0x08018460        0x8 ./Src/system_stm32f4xx.o
-                0x08018460                APBPrescTable
+                0x08018430        0x8 ./Src/system_stm32f4xx.o
+                0x08018430                APBPrescTable
  .rodata.flagBitshiftOffset.9142
-                0x08018468        0x8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
+                0x08018438        0x8 ./Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o
  .rodata._global_impure_ptr
-                0x08018470        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-impure.o)
-                0x08018470                _global_impure_ptr
+                0x08018440        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-impure.o)
+                0x08018440                _global_impure_ptr
  .rodata._svfprintf_r.str1.4
-                0x08018474       0x42 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
- *fill*         0x080184b6        0x2 
+                0x08018444       0x42 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
+ *fill*         0x08018486        0x2 
  .rodata.blanks.8346
-                0x080184b8       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
+                0x08018488       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
  .rodata.zeroes.8347
-                0x080184c8       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
+                0x08018498       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-svfprintf.o)
  .rodata._dtoa_r.str1.4
-                0x080184d8       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-dtoa.o)
+                0x080184a8       0x10 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-dtoa.o)
                                  0x12 (size before relaxing)
  .rodata.__mprec_bigtens
-                0x080184e8       0x28 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x080184e8                __mprec_bigtens
+                0x080184b8       0x28 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080184b8                __mprec_bigtens
  .rodata.__mprec_tens
-                0x08018510       0xc8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
-                0x08018510                __mprec_tens
+                0x080184e0       0xc8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080184e0                __mprec_tens
  .rodata.p05.7178
-                0x080185d8        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
+                0x080185a8        0xc c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-mprec.o)
  .rodata._setlocale_r.str1.4
-                0x080185e4        0xa c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-locale.o)
+                0x080185b4        0xa c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-locale.o)
                                   0xd (size before relaxing)
- *fill*         0x080185ee        0x2 
+ *fill*         0x080185be        0x2 
  .rodata.str1.4
-                0x080185f0        0x2 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-locale.o)
- *fill*         0x080185f2        0x2 
+                0x080185c0        0x2 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-locale.o)
+ *fill*         0x080185c2        0x2 
  .rodata._ctype_
-                0x080185f4      0x101 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-ctype_.o)
-                0x080185f4                _ctype_
- *fill*         0x080186f5        0x3 
+                0x080185c4      0x101 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-ctype_.o)
+                0x080185c4                _ctype_
+ *fill*         0x080186c5        0x3 
  .rodata.asin.str1.4
-                0x080186f8        0x5 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_asin.o)
+                0x080186c8        0x5 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_asin.o)
                                   0x9 (size before relaxing)
- *fill*         0x080186fd        0x3 
+ *fill*         0x080186cd        0x3 
  .rodata.sqrt.str1.4
-                0x08018700        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_sqrt.o)
+                0x080186d0        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-w_sqrt.o)
                                   0x5 (size before relaxing)
  .rodata.atanhi
-                0x08018708       0x20 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_atan.o)
+                0x080186d8       0x20 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_atan.o)
  .rodata.atanlo
-                0x08018728       0x20 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_atan.o)
-                0x08018748                . = ALIGN (0x4)
+                0x080186f8       0x20 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libm.a(lib_a-s_atan.o)
+                0x08018718                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x08018748        0x8
-                0x08018748                __exidx_start = .
+.ARM            0x08018718        0x8
+                0x08018718                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x08018748        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
-                0x08018750                __exidx_end = .
+ .ARM.exidx     0x08018718        0x8 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard\libgcc.a(_udivmoddi4.o)
+                0x08018720                __exidx_end = .
 
-.rel.dyn        0x08018750        0x0
- .rel.iplt      0x08018750        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+.rel.dyn        0x08018720        0x0
+ .rel.iplt      0x08018720        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.preinit_array  0x08018750        0x0
-                0x08018750                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x08018720        0x0
+                0x08018720                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x08018750                PROVIDE (__preinit_array_end, .)
+                0x08018720                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x08018750        0x8
-                0x08018750                PROVIDE (__init_array_start, .)
+.init_array     0x08018720        0x8
+                0x08018720                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  .init_array.00000
-                0x08018750        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
+                0x08018720        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/fpv4-sp/hard\libg.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x08018754        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x08018758                PROVIDE (__init_array_end, .)
+ .init_array    0x08018724        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x08018728                PROVIDE (__init_array_end, .)
 
-.fini_array     0x08018758        0x4
-                0x08018758                PROVIDE (__fini_array_start, .)
+.fini_array     0x08018728        0x4
+                0x08018728                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08018758        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
-                0x0801875c                PROVIDE (__fini_array_end, .)
-                0x0801875c                _sidata = LOADADDR (.data)
+ .fini_array    0x08018728        0x4 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
+                0x0801872c                PROVIDE (__fini_array_end, .)
+                0x0801872c                _sidata = LOADADDR (.data)
 
-.data           0x20000000     0x1cdc load address 0x0801875c
+.data           0x20000000     0x1cdc load address 0x0801872c
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -34137,15 +34137,15 @@ LOAD c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../li
                 0x20001cdc                . = ALIGN (0x4)
  *fill*         0x20001cd9        0x3 
                 0x20001cdc                _edata = .
-                0x0801a438                _siccmram = LOADADDR (.ccmram)
+                0x0801a408                _siccmram = LOADADDR (.ccmram)
 
-.jcr            0x20001cdc        0x0 load address 0x0801a438
+.jcr            0x20001cdc        0x0 load address 0x0801a408
  .jcr           0x20001cdc        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.igot.plt       0x20001cdc        0x0 load address 0x0801a438
+.igot.plt       0x20001cdc        0x0 load address 0x0801a408
  .igot.plt      0x20001cdc        0x0 c:/program files/devtools/gnu tools arm embedded/6 2017-q2-update/bin/../lib/gcc/arm-none-eabi/6.3.1/thumb/v7e-m/fpv4-sp/hard/crtbegin.o
 
-.ccmram         0x10000000        0x0 load address 0x0801a438
+.ccmram         0x10000000        0x0 load address 0x0801a408
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _sccmram = .
  *(.ccmram)

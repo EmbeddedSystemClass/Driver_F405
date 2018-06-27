@@ -432,7 +432,7 @@ void TestComputationMode(){
 				  	{
 					  LSM9DS1_Read_XLG(&data_in,1);
 					  MotionFX_manager_run(&data_in,&data_out,MFX_DELTATIME);
-					  snprintf(data, 128, "%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f|%3.1f;%3.1f;%3.1f\n",
+					  snprintf(data, 128, "%.3f;%.3f;%.3f|%.3f;%.3f;%.3f|%3.1f;%3.1f;%3.1f\n",
 										   data_in.acc[0], data_in.acc[1], data_in.acc[2],
 										   data_in.gyro[0],data_in.gyro[1],data_in.gyro[2],
 										   data_out.rotation_6X[0],data_out.rotation_6X[1],data_out.rotation_6X[2]);
